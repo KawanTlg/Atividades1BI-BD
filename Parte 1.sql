@@ -1,0 +1,27 @@
+CREATE DATABASE parte_1;
+USE parte_1;
+
+CREATE TABLE cliente(
+ id_cliente INT AUTO_INCREMENT,
+ nm_cliente VARCHAR(100) NOT NULL,
+ endereco VARCHAR(100) NOT NULL,
+ e_mail VARCHAR(80) NOT NULL,
+ celular INT NOT NULL,
+ dt_cliente DATE NOT NULL,
+ PRIMARY KEY (id_cliente)
+);
+
+CREATE TABLE produtos(
+ id_prods INT AUTO_INCREMENT,
+ nm_prod VARCHAR(50) NOT NULL,
+ prc_prod VARCHAR(50) NOT NULL,
+ desc_prod VARCHAR(100) NOT NULL,
+ qtd_prod MEDIUMINT NOT NULL,
+ PRIMARY KEY(id_prods)
+);
+
+CREATE TABLE pedidos(
+  id_pdd INT AUTO_INCREMENT,
+  nm_pdd INT AUTO_INCREMENT NOT NULL,
+  dt_pdd DATE CURRENT_TIMESTAMP NOT NULL,
+);
